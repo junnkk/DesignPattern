@@ -1,18 +1,20 @@
-## Getting Started
+## 팩토리 패턴   
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### [팩토리 메서드 패턴]   
+#### : 객체를 생성할 때 필요한 인터페이스를 만든다. 어떤 클래스의 인터페이스를 만들지는 서브 클래스에서 결정한다. 팩토리 메소드를 사용하면 인스턴스 만드는 일을 서브 클래스에 맡길 수 있다.
+       
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
+### [추상 팩토리 패턴]
+#### : 구상 클래스에 의존하지 않고도 서로 연관되거나 의존적인 객체로 이루어진 제품군을 생성하는 인터페이스를 제공한다. 구상 클래스는 서브 클래스에서 만든다. 
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+> - 팩토리를 쓰면 객체 생성을 캡슐화할 수 있다. 
+> - 간단한 팩토리는 엄밀하게 말해서 디자인 패턴은 아니지만 클라이언트와 구상 클래스를 분리하는 간단한 기법으로 활용할 수 있다. 
+> - 팩토리 메서드 패턴은 상속을 활용한다. 객체 생성을 서브클래스에게 맡긴다. 서브 클래스는 팩토리 메서드를 구현해서 객체를 생산한다. 
+> - 추상 팩토리 패턴은 객체 구성을 활용한다. 팩토리 인터페이스에서 선언한 메소드에서 객체 생성이 구현된다. 
+> - 모든 팩토리 패턴은 애플리케이션의 구상 클래스 의존성을 줄여줌으로써 느슨한 결합을 도와준다.
+> - 팩토리 메소드 패턴은 특정 클래스에서 인스턴스를 만드는 일을 서브 클래스에게 넘긴다. 
+> - 추상 팩토리 패턴은 구상 클래스에 직접 의존하지 않고도 서로 관련된 객체로 이루어진 제품군을 만드는 용도로 쓰인다. 
+> - 의존성 뒤집기 원칙을 따르면 구상 형식 의존을 피하고 추상화를 지향할 수 있다. 
+> - 팩토리는 구상 클래스가 아닌 추상 클래스와 인터페이스에 맞춰서 코딩할 수 있게 해주는 강력한 기법이다. 
