@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "05.singleton/src/EnumSingleton",
+        "04.factory/src",
+        "05.singleton/src/EnumChocolateBoiler"
+    ]
+}
